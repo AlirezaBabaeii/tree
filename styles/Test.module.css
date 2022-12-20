@@ -1,0 +1,373 @@
+.main{
+  display: flex;
+  flex-direction: row;
+  direction: ltr;
+}
+.sticky0 {
+  background: linear-gradient( 0deg, rgba(190, 194, 255, 0.08), rgba(190, 194, 255, 0.08) ), #1b1b1f;
+  /* border-bottom: 1px solid #989ea4; */
+  /* border-top: 1px solid #717d85; */
+  /* padding-left: 0px; */
+  color: #fff;
+  position: -webkit-sticky;
+  position: sticky;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  height: 32px;
+  top: 0px;
+  z-index: 5;
+}
+.teststicky{
+  background: linear-gradient( 0deg, rgba(190, 194, 255, 0.08), rgba(190, 194, 255, 0.08) ), #1b1b1f;
+  /* border-bottom: 1px solid #989ea4; */
+  /* border-top: 1px solid #717d85; */
+  /* padding-left: 20px; */
+  color: #fff;
+  position: -webkit-sticky;
+  position: sticky;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  min-height: 32px;
+}
+.sticky1 {
+  background: linear-gradient( 0deg, rgba(190, 194, 255, 0.08), rgba(190, 194, 255, 0.08) ), #1b1b1f;
+  /* border-bottom: 1px solid #989ea4; */
+  /* border-top: 1px solid #717d85; */
+  /* padding-left: 20px; */
+  color: #fff;
+  position: -webkit-sticky;
+  position: sticky;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  height: 32px;
+  top: 20px;
+  z-index: 4;
+}
+.sticky2 {
+  background: linear-gradient( 0deg, rgba(190, 194, 255, 0.08), rgba(190, 194, 255, 0.08) ), #1b1b1f;
+  /* border-bottom: 1px solid #989ea4; */
+  /* border-top: 1px solid #717d85; */
+  /* padding-left: 40px; */
+  color: #fff;
+  position: -webkit-sticky;
+  position: sticky;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  height: 32px;
+  top: 40px;
+  z-index: 3;
+}
+.sticky3 {
+  background: linear-gradient( 0deg, rgba(190, 194, 255, 0.08), rgba(190, 194, 255, 0.08) ), #1b1b1f;
+  /* border-bottom: 1px solid #989ea4; */
+  /* border-top: 1px solid #717d85; */
+  /* padding-left: 60px; */
+  color: #fff;
+  position: -webkit-sticky;
+  position: sticky;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  height: 32px;
+  top: 60px;
+  z-index: 2;
+}
+.sticky4 {
+  background: linear-gradient( 0deg, rgba(190, 194, 255, 0.08), rgba(190, 194, 255, 0.08) ), #1b1b1f;
+  /* border-bottom: 1px solid #989ea4; */
+  /* border-top: 1px solid #717d85; */
+  /* padding-left: 80px; */
+  color: #fff;
+  position: -webkit-sticky;
+  position: sticky;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  height: 32px;
+  top: 80px;
+  z-index: 1;
+}
+
+.item {
+  background: linear-gradient( 0deg, rgba(190, 194, 255, 0.08), rgba(190, 194, 255, 0.08) ), #1b1b1f;
+  /* border-bottom: 1px solid #989ea4; */
+  /* border-top: 1px solid #717d85; */
+  /* padding-left: 110px; */
+  color: #fff;
+  height: 100%;
+  /* max-height: 32px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  position: relative;
+  z-index: 0;
+}
+.containerlabel_text {
+  display: flex;
+  flex-direction: row;
+  margin-left: 4px;
+  margin-right: 4px;
+  align-items: flex-start;
+}
+.Label{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.Label svg {
+  top: calc(50% - 20px / 2);
+  position: relative;
+}
+.ArrowTextContainer{
+  display: flex;
+flex-direction: row;
+text-align: center;
+white-space: nowrap;
+}
+.Textlabel{
+  display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+.items {
+  width: 300px;
+  height: 200px;
+  border: 1px solid gray;
+  position: sticky;
+  top: 5px;
+  margin-top: 10%;
+}
+.container {
+  background: linear-gradient(
+      0deg,
+      rgba(190, 194, 255, 0.08),
+      rgba(190, 194, 255, 0.08)
+    ),
+    #1b1b1f;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow-y: auto;
+  overflow-x: auto;
+  height: 100vh;
+  width: 300px;
+}
+.Parent_wapper {
+  background: linear-gradient(
+      0deg,
+      rgba(190, 194, 255, 0.08),
+      rgba(190, 194, 255, 0.08)
+    ),
+    #1b1b1f;
+    width: 100%;
+min-width: max-content;
+}
+.inputs {
+  display: none;
+}
+.wr {
+  color: #cad800;
+}
+
+.inputs:not(:checked) ~ div  {
+  display: none;
+}
+
+
+/* .containerlabel_text .Label svg{
+  transform: rotate(0deg);
+
+}
+ .inputs:not(:checked) ~ .containerlabel_text .Label svg{
+  transform: rotate(90deg)
+}
+.inputs[type="checkbox"]:checked  .containerlabel_text span svg {
+  
+  transform: rotate(90deg) !important; 
+
+}
+.containerlabel_text span svg{
+  transform: rotate(0deg); 
+} */
+
+
+
+
+
+
+
+
+
+.Treepointcontainer {
+  background: #272730;
+  border: none;
+  outline: none;
+  opacity: 1;
+  display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: flex-start;
+position: sticky;
+right: 32px;
+}
+.Treepointcontainer:hover{
+background-color: #393a49;
+}
+.MenuItems{
+  background: linear-gradient( 0deg, rgba(190, 194, 255, 0.08), rgba(190, 194, 255, 0.08) ), #1b1b1f !important;
+  border: none !important;
+
+}
+.MenuItems div{
+ display: flex;
+ flex-direction: row;
+ justify-content: space-around;
+ align-items: center;
+ color: white;
+ background: linear-gradient( 0deg, rgba(190, 194, 255, 0.08), rgba(190, 194, 255, 0.08) ), #1b1b1f;
+
+}
+.MenuItems div:hover{
+  background:#393a49 !important;
+  
+}
+
+.RenameInput{
+  background: transparent;
+border: none;
+outline: none;
+color: white;
+background: rgba(190, 194, 255, 0.12);
+height: 100%; 
+
+}
+.AdditemInput{
+  background: transparent;
+  border: none;
+  outline: none;
+  color: white;
+  background: rgba(190, 194, 255, 0.12);
+  height: 32px; 
+  text-align: start;
+}
+
+/* 
+li:hover .Treepointcontainer{
+opacity: 1;
+} */
+/* li:hover .TreeItem{
+  background:#393a49 !important;
+}
+*/
+.Label:hover{
+  background: transparent !important; 
+} 
+.teststicky:hover{
+  background: rgba(190, 194, 255, 0.12) !important; 
+
+}
+.item:hover{
+  background: rgba(190, 194, 255, 0.12) !important;
+}
+.Label:hover .Treepointcontainer{
+  opacity: 1;
+  border: none;
+}
+.Itemmenu_Container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  color: white;
+  background: linear-gradient( 0deg, rgba(190, 194, 255, 0.08), rgba(190, 194, 255, 0.08) ), #1b1b1f;
+
+}
+.MenuItems div:hover  .Itemmenu_Container{
+  background:#393a49 !important;
+  
+}
+
+
+
+
+
+
+
+
+
+.item_wrapper{
+  /* width: max-content; */
+  display: flex;
+  height: 32px;
+  background-color: #272730;
+  color: white;
+  max-width: 100%;
+}
+
+.labelwrapper{
+  width: 100%;
+  display: inline-flex;
+}
+
+
+.divs{
+  margin: 0;
+  padding: 0;
+  border: none;
+  height: 32px;
+  flex: 1 0 64px;
+  min-width: 0px;
+  line-height: 32px;
+}
+
+.AddnewArrayitem{
+  margin: 0;
+  padding: 0;
+  border: none;
+  height: 32px;
+  flex: 1 0 64px;
+  width: 100%;
+  line-height: 32px;
+
+
+border: none;
+outline: none;
+background: rgba(190, 194, 255, 0.12);
+color: white; 
+}
+
+
+
+
+
+
+/*  Accardon menu */
+
+
+.WrapperTreeitem{
+  background-color: #272730;
+color: white;
+max-width: 100%;
+height: auto;
+display: flex;
+flex-direction: column;
+
+}
+.Accardonmenu{
+  display: none;
+}
+.Accardonmenu:not(:checked) ~ div {
+  display: none;
+}

@@ -1,0 +1,129 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  direction: ltr;
+}
+
+
+:root {
+  --my-label-height: 40px;
+  direction: ltr;
+
+}
+
+
+.sticky {
+  background: #00d812;
+  border-bottom: 1px solid #989ea4;
+  border-top: 1px solid #717d85;
+  padding-left: 0px;
+  color: #fff;
+  position: -webkit-sticky;
+  position: sticky;
+
+}
+
+.sticky0 {
+  background: transparent;
+  border-bottom: 1px solid #989ea4;
+  border-top: 1px solid #717d85;
+  padding-left: 0px;
+  color: #fff;
+  position: -webkit-sticky !important;
+  position: sticky !important;
+  top: 0px;
+  z-index: -1;
+}
+.sticky1 {
+  background: transparent;
+  border-bottom: 1px solid #989ea4;
+  border-top: 1px solid #717d85;
+  padding-left: 20px;
+  color: #fff;
+  position: -webkit-sticky !important;
+  position: sticky !important;
+  top: 20px;
+  z-index: -2;
+}
+.sticky2 {
+  background: transparent;
+  border-bottom: 1px solid #989ea4;
+  border-top: 1px solid #717d85;
+  padding-left: 40px;
+  color: #fff;
+  position: -webkit-sticky !important;
+  position: sticky !important;
+  top: 40px;
+  z-index: -3;
+}
+.sticky3 {
+  background: transparent;
+  border-bottom: 1px solid #989ea4;
+  border-top: 1px solid #717d85;
+  padding-left: 60px;
+  color: #fff;
+  position: -webkit-sticky !important;
+  position: sticky !important;
+  top: 60px;
+  z-index: -4;
+}
+
+.item {
+  background: #d800bb;
+  border-bottom: 1px solid #989ea4;
+  border-top: 1px solid #717d85;
+  padding-left: 60px;
+  color: #fff;
+  position: relative;
+  z-index: -5;
+}
+
+
+.my-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: block;
+  color: white;
+  position: sticky;
+  /* border: 1px solid red; */
+}
+
+.my-label {
+  background: #d800bb;
+  border-bottom: 1px solid #989ea4;
+  border-top: 1px solid #717d85;
+  padding-left: 60px;
+  color: #fff;
+  height: 100%;
+
+  
+}
+.my-label:hover{
+  background: rgba(190, 194, 255, 0.12);
+}
+
+.my-input {
+  
+}
+
+.my-input:not(:checked) ~ .my-list {
+  display: none;
+}
+
+.my-input:checked ~ .my-list {
+  display: block;
+}
+
+
+.my-item{
+  /* position: sticky; */
+  height: 100%;
+  /* overflow: scroll; */
+  
+}
+
+.my-item > .my-list {
+  padding-left: 30px;
+}

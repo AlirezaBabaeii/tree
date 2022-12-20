@@ -1,0 +1,336 @@
+.TagA{
+    text-decoration: none;
+  }
+  
+  /**
+   * Hidden fallback
+   */
+  /* [hidden] {
+    display: none;
+    visibility: hidden;
+  } */
+  
+  /**
+   * Styling navigation
+   */
+  .divs {
+  
+    max-width: 22.5rem;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.25);
+  }
+  .divs li ul{
+    list-style-type: none;
+  }
+  
+  /**
+   * Styling top level items
+   */
+  .nav a,
+  .nav label {
+    display: block;
+    height: 32px;
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    transition: all 0.25s ease-in;
+  }
+  /* .RightArrow {
+    margin-left: 4px;
+  } */
+  /* .nav a:focus,
+  .nav a:hover,
+  .nav label:focus {
+    color: rgba(255, 255, 255, 0.5);
+    background: #030303;
+  } */
+  
+  /* .nav label {
+    cursor: pointer;
+    margin-left: 4px;
+    margin-right: 4px;
+  } */
+  
+  .label3{
+    display: flex !important;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 4px;
+    padding-right: 4px;
+  
+    /* margin-left: 4px;
+    margin-right: 4px; */
+  }
+  .text_icon_container{
+    display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+  }
+  .Threepoint{
+ opacity: 0;
+  }
+  .label3:hover{
+    background: rgba(190, 194, 255, 0.12);
+  
+  }
+  .label3:hover .Threepoint{
+  opacity: 1;
+  }
+
+.InputWrapper{
+  border: none;
+background: rgba(190, 194, 255, 0.12);
+color: white;
+height: 32px;
+padding: 0;
+margin: 0;
+
+}
+.InputWrapper input{
+  width: 100%;
+  height: 100%;
+  color: white;
+  background: transparent;
+  border: none;
+  outline: none;
+}
+.Inputnameproject:read-only{
+  background: transparent;
+  color: white;
+  border: none;
+  outline: none;
+}
+.Inputnameproject:read-write{
+  border: none;
+  background: rgba(190, 194, 255, 0.12);
+  color: white;
+  height: 32px;
+  padding: 0;
+  margin: 0;
+  outline: none;
+}
+.Sub2item{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.ThreepointSub2{
+  opacity: 0;
+}
+.Sub2item:hover .ThreepointSub2{
+  opacity: 1;
+}
+.Wrapperadditem{
+  width: 100%;
+  display: flex;
+flex-direction: column;
+align-items: center;
+}
+.Wrapperadditem h4{
+  margin: 0;
+  padding: 0;
+}
+.Wrapperitem{
+  position: relative;
+}
+.Popover{
+  position: absolute;
+left: 100%;
+z-index: 9999;
+width: 100px;
+height: 100px;
+top: 0;
+box-shadow: 0 3px 12px rgba(0, 0, 0, 0.25);
+background: rgba(190, 194, 255, 0.12);
+display: none;
+}
+.Wrapperadditem:focus .Popover{
+  display: block;
+}
+.Toggelethreepoint{
+  background: transparent;
+  border: none;
+}
+.Toggelethreepoint section{
+  background-color: aqua;
+}
+.MenuPopover{
+width: 100%;
+height: 100%;
+/* background-color: aqua; */
+}
+  .icon{
+    margin-right: 4px;
+  }
+  
+  .accordionItemContainer:hover{
+    background: rgba(190, 194, 255, 0.12);
+  }
+  /**
+   * Styling first level lists items
+   */
+  .group_list a,
+  .group_list label {
+    padding-left: 2rem;
+    /* background: #252525;
+    box-shadow: inset 0 -1px #373737; */
+  }
+  .group_list a:focus,
+  .group_list a:hover,
+  .group_list label:focus,
+  .group_list label:hover {
+    background: rgba(190, 194, 255, 0.12);
+  }
+  
+  /**
+   * Styling second level list items
+   */
+  .sub_group_list a,
+  .sub_group_list label {
+    padding-left: 4rem;
+    /* background: #353535;
+    box-shadow: inset 0 -1px #474747; */
+  }
+  .fa-angle-right {
+    margin-left: 12px;
+    margin-right: 12px;
+  }
+  /* .sub-group_list a:focus,
+  .sub-group_list a:hover,
+  .sub-group_list label:focus,
+  .sub-group_list label:hover {
+    background: #232323;
+  } */
+  
+  /**
+   * Styling third level list items
+   */
+  /* .sub-sub-group_list a,
+  .sub-sub-group_list label {
+    padding-left: 6rem;
+    background: #454545;
+    box-shadow: inset 0 -1px #575757;
+  } */
+  /* .sub-sub-group_list a:focus, .sub-sub-group_list a:hover,
+  .sub-sub-group_list label:focus,
+  .sub-sub-group_list label:hover {
+    background: #333333;
+  } */
+  
+  /**
+   * Hide nested lists
+   */
+  .group_list,
+  .sub_group_list,
+  .sub_sub_group_list {
+    height: 100%;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .nav__list {
+    background: linear-gradient(
+        0deg,
+        rgba(190, 194, 255, 0.08),
+        rgba(190, 194, 255, 0.08)
+      ),
+      #1b1b1f;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      color: white;
+      height: 500px;
+overflow: scroll;
+  }
+  
+  .accordionItem {
+    background: linear-gradient(
+        0deg,
+        rgba(190, 194, 255, 0.08),
+        rgba(190, 194, 255, 0.08)
+      ),
+      #1b1b1f;
+    /* padding-left: 4px;
+    padding-right: 4px; */
+  }
+  .accordionItem:hover {
+    background: rgba(190, 194, 255, 0.12);
+  }
+  
+  .nav__list input[type="checkbox"]:checked + label + ul {
+    /* reset the height when checkbox is checked */
+    max-height: 1000px;
+  }
+  
+  /**
+   * Rotating chevron icon
+   */
+  .label3 > span {
+    /* float: right; */
+    margin-right: 4px;
+    transition: transform 0.65s ease;
+  }
+  
+  .nav__list input[type="checkbox"]:checked + label > div > span {
+    transform: rotate(90deg);
+  }
+  
+  
+  .sticky0 {
+    background: #00d812;
+    border-bottom: 1px solid #989ea4;
+    border-top: 1px solid #717d85;
+    padding-left: 0px;
+    color: #fff;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0px;
+    z-index: -1;
+  }
+  .sticky1 {
+    background: #d80000;
+    border-bottom: 1px solid #989ea4;
+    border-top: 1px solid #717d85;
+    padding-left: 20px;
+    color: #fff;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 20px;
+    z-index: -2;
+  }
+  .sticky2 {
+    background: #007ad8;
+    border-bottom: 1px solid #989ea4;
+    border-top: 1px solid #717d85;
+    padding-left: 40px;
+    color: #fff;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 40px;
+    z-index: -3;
+  }
+  .sticky3 {
+    background: #cad800;
+    border-bottom: 1px solid #989ea4;
+    border-top: 1px solid #717d85;
+    padding-left: 60px;
+    color: #fff;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 60px;
+    z-index: -4;
+  }
+  
+  .item {
+    background: #d800bb;
+    border-bottom: 1px solid #989ea4;
+    border-top: 1px solid #717d85;
+    padding-left: 60px;
+    color: #fff;
+    position: relative;
+    z-index: -5;
+  }
